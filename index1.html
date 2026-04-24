@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Garments | Manufacturing & Export</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#D90429',
+                        brandDark: '#1A1A1A',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Smooth Animations */
+        .float-anim { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .image-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <div class="w-8 h-8 bg-brandRed rounded-sm rotate-45 flex items-center justify-center">
+                        <span class="text-white font-bold -rotate-45">A</span>
+                    </div>
+                    <span class="font-serif font-bold text-2xl tracking-wider text-brandDark">ATHUL<span class="text-brandRed">GARMENTS</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-sm font-semibold hover:text-brandRed transition-colors">About</a>
+                    <a href="#products" class="text-sm font-semibold hover:text-brandRed transition-colors">Products</a>
+                    <a href="#process" class="text-sm font-semibold hover:text-brandRed transition-colors">Process</a>
+                    <a href="#gallery" class="text-sm font-semibold hover:text-brandRed transition-colors">Gallery</a>
+                    <a href="#contact" class="bg-brandDark text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-brandRed transition-all duration-300 shadow-lg hover:shadow-brandRed/50">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center bg-brandDark overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558304652-32130e628ee3?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30 mix-blend-overlay"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brandDark via-brandDark/90 to-transparent"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between w-full">
+            <div class="md:w-1/2" data-aos="fade-right" data-aos-duration="1200">
+                <div class="inline-block bg-brandRed text-white text-xs font-bold tracking-widest px-3 py-1 mb-6 uppercase">Premium Export Quality</div>
+                <h1 class="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6">
+                    Crafting Style.<br>
+                    <span class="text-brandRed">Manufacturing Quality.</span>
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 max-w-lg font-light leading-relaxed">
+                    Premium Garments for Retail, Wholesale, and Custom Orders. Where industrial scale meets luxury precision.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#products" class="bg-brandRed text-white px-8 py-4 rounded-sm font-bold tracking-wide hover:bg-white hover:text-brandRed transition-all duration-300">Explore Collection</a>
+                    <a href="#contact" class="border border-white text-white px-8 py-4 rounded-sm font-bold tracking-wide hover:bg-white hover:text-brandDark transition-all duration-300">Bulk Orders</a>
+                </div>
+            </div>
+            
+            <div class="hidden md:block md:w-1/2 relative h-[600px]" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&auto=format&fit=crop" class="absolute top-10 right-20 w-64 rounded-lg shadow-2xl float-anim border-4 border-white/10 z-20" alt="Premium T-Shirt">
+                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&auto=format&fit=crop" class="absolute bottom-20 left-10 w-56 rounded-lg shadow-2xl float-anim border-4 border-white/10 z-10" style="animation-delay: -3s;" alt="Leather Jacket">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="grid grid-cols-2 gap-4" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?w=600&auto=format&fit=crop" class="rounded-sm shadow-lg w-full h-64 object-cover" alt="Factory">
+                    <img src="https://images.unsplash.com/photo-1612423284934-2850a4eaea40?w=600&auto=format&fit=crop" class="rounded-sm shadow-lg w-full h-64 object-cover mt-8" alt="Stitching">
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-brandRed font-bold tracking-widest text-sm uppercase mb-3">About Us</h2>
+                    <h3 class="text-4xl font-serif font-bold text-brandDark mb-6">Trusted Global Garment Manufacturing Partner</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        With state-of-the-art infrastructure and a skilled production team, we transform premium fabrics into high-end fashion. Our strict quality control ensures every stitch meets global export standards.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-800 font-semibold"><i class="fa-solid fa-check text-brandRed mr-3"></i> High-Quality Fabrics & Materials</li>
+                        <li class="flex items-center text-gray-800 font-semibold"><i class="fa-solid fa-check text-brandRed mr-3"></i> Highly Skilled Production Team</li>
+                        <li class="flex items-center text-gray-800 font-semibold"><i class="fa-solid fa-check text-brandRed mr-3"></i> Fast Delivery & Reliable Service</li>
+                    </ul>
+                    <a href="#contact" class="text-brandDark font-bold border-b-2 border-brandRed pb-1 hover:text-brandRed transition-colors">Contact Us <i class="fa-solid fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-brandRed font-bold tracking-widest text-sm uppercase mb-3">Our Collection</h2>
+                <h3 class="text-4xl font-serif font-bold text-brandDark">Premium Categories</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-sm bg-white shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" alt="T-Shirts">
+                    </div>
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-brandRed/80 transition-colors duration-300 flex flex-col justify-end p-6">
+                        <h4 class="text-white text-2xl font-bold mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">T-Shirts</h4>
+                        <p class="text-white/0 group-hover:text-white/90 transition-all duration-300 text-sm">Crewnecks, V-Necks, Polos in premium cotton blends.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-sm bg-white shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=600&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" alt="Shirts">
+                    </div>
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-brandRed/80 transition-colors duration-300 flex flex-col justify-end p-6">
+                        <h4 class="text-white text-2xl font-bold mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Formal & Casual Shirts</h4>
+                        <p class="text-white/0 group-hover:text-white/90 transition-all duration-300 text-sm">Crisp linens and oxfords tailored to perfection.</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-sm bg-white shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" alt="Hoodies">
+                    </div>
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-brandRed/80 transition-colors duration-300 flex flex-col justify-end p-6">
+                        <h4 class="text-white text-2xl font-bold mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Hoodies & Jackets</h4>
+                        <p class="text-white/0 group-hover:text-white/90 transition-all duration-300 text-sm">Heavyweight fleece and modern outerwear designs.</p>
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-sm bg-white shadow-xl cursor-pointer" data-aos="fade-up" data-aos-delay="400">
+                    <div class="h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?w=600&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" alt="Custom">
+                    </div>
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-brandRed/80 transition-colors duration-300 flex flex-col justify-end p-6">
+                        <h4 class="text-white text-2xl font-bold mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Custom Printing</h4>
+                        <p class="text-white/0 group-hover:text-white/90 transition-all duration-300 text-sm">Screen printing, embroidery, and DTG capabilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-24 bg-brandDark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-brandRed font-bold tracking-widest text-sm uppercase mb-3">How It's Made</h2>
+                <h3 class="text-4xl font-serif font-bold">The Manufacturing Process</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-800 -z-10 -translate-y-1/2"></div>
+                
+                <div class="text-center group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 mx-auto bg-gray-900 border-2 border-brandRed rounded-full flex items-center justify-center mb-6 group-hover:bg-brandRed transition-colors duration-300">
+                        <i class="fa-solid fa-scroll text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">1. Fabric Selection</h4>
+                    <p class="text-sm text-gray-400">Sourcing premium raw materials globally.</p>
+                </div>
+                <div class="text-center group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 mx-auto bg-gray-900 border-2 border-brandRed rounded-full flex items-center justify-center mb-6 group-hover:bg-brandRed transition-colors duration-300">
+                        <i class="fa-solid fa-scissors text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">2. Precision Cutting</h4>
+                    <p class="text-sm text-gray-400">Automated cutting for zero-waste accuracy.</p>
+                </div>
+                <div class="text-center group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 mx-auto bg-gray-900 border-2 border-brandRed rounded-full flex items-center justify-center mb-6 group-hover:bg-brandRed transition-colors duration-300">
+                        <i class="fa-solid fa-layer-group text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">3. Stitching</h4>
+                    <p class="text-sm text-gray-400">Expert tailoring by seasoned artisans.</p>
+                </div>
+                <div class="text-center group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-20 h-20 mx-auto bg-gray-900 border-2 border-brandRed rounded-full flex items-center justify-center mb-6 group-hover:bg-brandRed transition-colors duration-300">
+                        <i class="fa-solid fa-magnifying-glass-chart text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">4. Quality Check</h4>
+                    <p class="text-sm text-gray-400">Rigorous 5-point inspection system.</p>
+                </div>
+                <div class="text-center group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-20 h-20 mx-auto bg-gray-900 border-2 border-brandRed rounded-full flex items-center justify-center mb-6 group-hover:bg-brandRed transition-colors duration-300">
+                        <i class="fa-solid fa-box-open text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">5. Packing & Export</h4>
+                    <p class="text-sm text-gray-400">Secure packaging ready for retail shelves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div data-aos="fade-right">
+                <h2 class="text-brandRed font-bold tracking-widest text-sm uppercase mb-3">Our Advantage</h2>
+                <h3 class="text-4xl font-serif font-bold text-brandDark mb-8">Why Choose Us</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="mt-1 bg-gray-100 p-3 rounded-full text-brandRed"><i class="fa-solid fa-star"></i></div>
+                        <div class="ml-4">
+                            <h4 class="text-xl font-bold text-brandDark">Premium Materials</h4>
+                            <p class="text-gray-600">We never compromise on the quality of yarn, dyes, or finishes.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="mt-1 bg-gray-100 p-3 rounded-full text-brandRed"><i class="fa-solid fa-tags"></i></div>
+                        <div class="ml-4">
+                            <h4 class="text-xl font-bold text-brandDark">Competitive B2B Pricing</h4>
+                            <p class="text-gray-600">Optimized manufacturing costs passed down to your bottom line.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="mt-1 bg-gray-100 p-3 rounded-full text-brandRed"><i class="fa-solid fa-truck-fast"></i></div>
+                        <div class="ml-4">
+                            <h4 class="text-xl font-bold text-brandDark">On-Time Delivery</h4>
+                            <p class="text-gray-600">Strict adherence to production timelines and logistics schedules.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 p-10 rounded-sm shadow-xl relative" data-aos="fade-left">
+                <i class="fa-solid fa-quote-right text-6xl text-gray-200 absolute top-6 right-8"></i>
+                <h3 class="text-2xl font-serif font-bold text-brandDark mb-8 relative z-10">Client Feedback</h3>
+                <div class="mb-6 relative z-10">
+                    <p class="text-lg text-gray-700 italic leading-relaxed">"Switching our manufacturing to ATHUL was the best decision for our retail chain. The quality of the stitching and the fabric feel are unmatched. Their bulk order handling is incredibly professional."</p>
+                </div>
+                <div class="flex items-center mt-8">
+                    <div class="w-12 h-12 bg-brandDark rounded-full flex items-center justify-center text-white font-bold text-xl">R</div>
+                    <div class="ml-4">
+                        <h4 class="font-bold text-brandDark">Rajiv M.</h4>
+                        <p class="text-sm text-gray-500">Director, Urban Wear Co.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-brandDark text-white pt-24 pb-12 border-t-8 border-brandRed">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
+                <div data-aos="fade-up">
+                    <h3 class="text-3xl font-serif font-bold mb-6">Request a Bulk Quote</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" placeholder="First Name" class="w-full bg-gray-900 border border-gray-800 p-4 rounded-sm focus:outline-none focus:border-brandRed transition-colors">
+                            <input type="text" placeholder="Last Name" class="w-full bg-gray-900 border border-gray-800 p-4 rounded-sm focus:outline-none focus:border-brandRed transition-colors">
+                        </div>
+                        <input type="email" placeholder="Email Address" class="w-full bg-gray-900 border border-gray-800 p-4 rounded-sm focus:outline-none focus:border-brandRed transition-colors">
+                        <select class="w-full bg-gray-900 border border-gray-800 p-4 rounded-sm focus:outline-none focus:border-brandRed transition-colors text-gray-400">
+                            <option>Interested in T-Shirts</option>
+                            <option>Interested in Uniforms</option>
+                            <option>Custom Manufacturing</option>
+                        </select>
+                        <textarea rows="4" placeholder="Order Details & Quantity" class="w-full bg-gray-900 border border-gray-800 p-4 rounded-sm focus:outline-none focus:border-brandRed transition-colors"></textarea>
+                        <button type="button" class="w-full bg-brandRed text-white font-bold py-4 rounded-sm hover:bg-white hover:text-brandDark transition-colors duration-300">Send Inquiry</button>
+                    </form>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col justify-center">
+                    <div class="mb-10">
+                        <h4 class="text-brandRed font-bold tracking-widest text-sm uppercase mb-4">Direct Contact</h4>
+                        <div class="space-y-4">
+                            <p class="flex items-center text-lg"><i class="fa-solid fa-phone text-brandRed w-8"></i> +91 98765 43210</p>
+                            <p class="flex items-center text-lg"><i class="fa-solid fa-envelope text-brandRed w-8"></i> export@ATHUL.com</p>
+                            <p class="flex items-center text-lg items-start"><i class="fa-solid fa-location-dot text-brandRed w-8 mt-1"></i> 123 Industrial Estate, Phase II<br>Manufacturing Hub</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-brandRed font-bold tracking-widest text-sm uppercase mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brandRed transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brandRed transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brandRed transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 ATHUL Garments. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/1234567890" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform duration-300 z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic',
+        });
+    </script>
+</body>
+</html>
